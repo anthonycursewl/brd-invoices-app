@@ -1,0 +1,127 @@
+.m_warn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: inherit;
+    background: rgba(0, 0, 0, 0.575);
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    z-index: 99;
+    overflow: hidden;
+}
+
+.m_warn_cn {
+    background: #080808;
+    border: 1px solid #1a1b1b62;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .9rem;
+    width: 280px;
+    transition: .2s ease-in-out;
+    transform: translateY(30px);
+}
+
+.m_warn_cn_active {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: .2s ease-in-out;
+    width: 320px;
+}
+
+/* Text del modal warn */
+
+
+.m_warn_text_2 {
+    width: 270px;
+    transition: .2s ease-in-out;
+    text-align: left;
+    padding: 1rem 0;
+    font-size: .9rem;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.m_warn_text_2_active {
+    font-size: .9rem;
+    transition: .2s ease-in-out;
+    width: 280px;
+    padding: 1rem 0;
+    text-align: left;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Text del modal warn */
+
+.m_warn_active {
+    visibility: visible;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+.m_warn_text svg {
+    width: 25px;
+    height: auto;
+    transition: .1s ease-in-out;
+}
+
+.m_warn_text span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m_warn_text span svg:hover {
+    cursor: pointer;
+    transition: .1s ease-in-out;
+    background: #6161612c;
+    border-radius: 50%;
+    padding: .2rem;
+}
+
+.m_warn_text p {
+    font-size: .9rem;
+}
+
+.m_warn_text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8rem .8rem 0 .8rem;
+}
+
+/* Gradient */
+
+.m_warn_gradient {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.m_warn_gradient_cn {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(80deg, #6d3737, #c5bc379c, #701a37de);
+    filter: blur(18px);
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 1rem;
+    transition: .2s ease-in-out;
+}
+
+/* Gradient */

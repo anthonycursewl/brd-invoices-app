@@ -1,0 +1,70 @@
+.option {
+    background: linear-gradient(10deg, #3522463a, #22212134);
+    width: 100%;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+.option:hover {
+    border: 1px solid rgba(185, 148, 219, 0.151);
+    transition: .2s ease-in-out;
+}
+
+.option p svg {
+    width: 20px;
+    height: auto;
+}
+
+.option p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .4rem;
+}
+
+.option-active {
+    background: linear-gradient(10deg, #3522461a, #22212121);
+    cursor: not-allowed;
+    transition: .2s ease-in-out;
+    width: 100%;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+    border: 1px solid rgba(185, 148, 219, 0.151);
+    box-shadow: 0px 5px 10px #5f37a81e;
+}
+
+.option p {
+    color: #dbdbdb;
+    transition: .2s ease-in-out;
+}
+
+.option p:hover {
+    transition: .2s ease-in-out;
+    transform: translateX(5px);
+}
+
+.option-active p {
+    color: #bba2e4;
+    transition: .2s ease-in-out;
+}
+
+.option-active p:hover {
+    transition: .2s ease-in-out;
+    transform: translateX(5px);
+}
+
+.option-active p svg {
+    width: 20px;
+    height: auto;
+}
+
+.option-active p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .4rem;
+}

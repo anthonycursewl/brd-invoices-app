@@ -1,0 +1,6 @@
+export const TYPE_USERS = {
+    ADMIN: 'ADMIN-BRD-S',
+    CLIENT: 'CLIENT-BRD-S',
+    EMPLOYEE: 'EMPLOYEE-BRD-S',
+    MOD: 'MOD-BRD-S'
+}

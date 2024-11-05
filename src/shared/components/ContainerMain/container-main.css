@@ -1,0 +1,20 @@
+.container-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container-main-cn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.stuff {
+    --bg-color: #fff;
+}

@@ -1,0 +1,72 @@
+.side-menu {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    min-width: 300px;
+}
+
+.side-menu-all {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.side-menu-titles {
+    background: #47474710;
+    border: .5px solid #68686810;
+    padding: .5rem 1rem;
+    border-radius: .8rem;
+    color: #dbd8d8;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    transition: .1s ease-in-out;
+}
+
+.side-menu-titles:hover {
+    transition: .1s ease-in-out;
+    background: #7a747410;
+    padding: .5rem 1.4rem;
+    color: #b9d4c7;
+}
+
+.side-menu-titles svg {
+    width: 20px;
+    height: auto;
+    transition: .1s ease-in-out;
+}
+
+
+.side-menu-item {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+}
+
+
+.side-menu-subtitles {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: .5rem;
+    color: #969696;
+    font-size: .9rem;
+    flex-direction: column;
+}
+
+@media (max-width: 1400px) {
+    .side-menu {
+        display: none;
+    }
+}
+
+/* Estilos del nav-active */
+
+/* Estilos del nav-active */

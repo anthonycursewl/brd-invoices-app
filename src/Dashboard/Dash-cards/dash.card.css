@@ -1,0 +1,110 @@
+.dash-bank-user-card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    font-family: 'monospace', sans-serif;
+    padding: 0 1rem;
+    background: linear-gradient(20deg, #101b17, #101b17, #101b17);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    margin-left: 1rem;
+}
+
+.dash-cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+@media (max-width: 800px) {
+    .dash-cards {
+        flex-wrap: wrap;
+    }
+}
+
+.brd-d-card-black {
+   background: linear-gradient(20deg, #11151b, #1a212b, #171d27, #1a212b, #1a212b);
+   height: 150px;
+   width: 300px;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+   border-radius: .6rem;
+   padding: .8rem 0;
+   font-size: .9rem;
+   font-family: monospace, sans-serif;
+   transition: .2s ease-in-out;
+}
+
+.brd-d-card-black:hover {
+    transition: .2s ease-in-out;
+    background: linear-gradient(20deg, #11151b, #1f2733, #171d27, #1a212b, #1a212b);
+    cursor: pointer;
+    transform: translateY(-5px);
+}
+
+
+.brd-d-card-gold {
+    background: linear-gradient(20deg, #1b1b11, #2b2b1a, #3d3d24, #49462c, #53482b);
+    height: 150px;
+    width: 300px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: .8rem 0;
+    font-size: .9rem;
+    font-family: monospace, sans-serif;
+    transition: .2s ease-in-out;
+    border-radius: .6rem;
+}
+
+.brd-d-card-gold:hover {
+    transform: translateY(-5px);
+    transition: .2s ease-in-out;
+    background: linear-gradient(20deg, #1b1b11, #3f3f25, #3d3d24, #49462c, #53482b);
+    cursor: pointer;
+ }
+
+
+
+.brd-d-card-cn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.brd-d-card-cn img {
+    width: 60px;
+    height: auto;
+}
+
+.brd-d-card-cn div p:nth-child(1) {
+    color: rgb(220, 220, 245);
+}
+
+.brd-d-card-cn div p:nth-child(2) {
+    color: rgb(152, 152, 153);
+    font-family: monospace, sans-serif;
+    font-size: 12px;
+}
+
+.brd-d-card-number svg {
+    width: 20px;
+    height: auto;
+}
+
+.brd-d-card-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+
+
+

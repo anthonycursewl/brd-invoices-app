@@ -1,0 +1,63 @@
+.modal-currency {
+    position: relative;
+    width: 90%;
+}
+
+.modal-currency-cn {
+    position: absolute;
+    background: #0e0d0df1;
+    top: 70px;
+    border-radius: 18px;
+    pointer-events: none;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.modal-currency-cn-active {
+    opacity: 1;
+    width: 100%;
+    transition: .2s ease-in-out;    
+    pointer-events: all;
+    z-index: 1;
+    margin-top: .3rem;
+}
+
+.all-flags {
+    width: 100% !important;
+}
+
+.item-flag img {
+    width: 25px;
+    height: auto;
+}
+
+.item-flag {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important; 
+    gap: .5rem !important;
+    padding: .6rem .8rem;
+    flex-direction: row !important;
+    cursor: pointer;
+}
+
+.item-flag:hover {
+    background: #3b3b3b25;
+}
+
+.item-flag:nth-last-child(1) {
+    padding-bottom: .8rem;
+}
+
+.item-flag:nth-last-child(1):hover {
+    border-radius: 0 0 18px 18px;
+}
+
+.item-flag:first-child:hover {
+    border-radius: 18px 18px 0 0;
+}
+
+.item-flag:first-child{
+    padding-top: .8rem;
+}
