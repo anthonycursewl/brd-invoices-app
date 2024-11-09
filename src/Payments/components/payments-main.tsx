@@ -80,6 +80,7 @@ export default function PaymentsMain() {
       cost_u: elements.cost_u.value,
       currency: currency
     }
+
     setProducts([...products, newProduct]);
 
     formData.reset();
@@ -142,7 +143,7 @@ export default function PaymentsMain() {
             <div className="payments-options-form">
                 <p>Ingresa los datos de tu pago</p>
 
-                <div>
+                <div className='payments-options-btn-generate'>
                   <button className='p-generate-invoice'>
                     <img src="/payments/generate-invoice.svg" alt="SVG Generar Factura" />
                     Generar Factura

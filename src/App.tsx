@@ -36,6 +36,16 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
+        <Route 
+        path="/"
+        element={
+          <>
+          dashboard para la landing y así
+          </>
+        }
+        />
+
+
         <Route
           path="/dashboard"
           element={

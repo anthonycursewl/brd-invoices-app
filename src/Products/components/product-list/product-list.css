@@ -1,0 +1,8 @@
+.product-list-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    background: #000;
+    flex-direction: column;
+}

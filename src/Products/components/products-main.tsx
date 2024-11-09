@@ -2,7 +2,6 @@ import './products-main.css'
 import '../../ProtectedRoutes/components/LoadingSession.css'
 import React, { useRef, useState } from "react"
 
-import SideMenu from "../../shared/components/SideMenu/SideMenu"
 
 import { IconProductAdd } from "../../assets/svgs/dashboard/icon-dash"
 import { AddPayment } from "../../assets/svgs/payments/add-payment"
@@ -14,8 +13,12 @@ import { generateIdInteger } from '../../shared/Services/generateIdInterger'
 // Componentes shared 
 import ModalWarn from '../../shared/Modal/modal-warn/ModalWarn'
 import VerifyAddProduct from './modals/verify-add-product'
+import SideMenu from "../../shared/components/SideMenu/SideMenu"
 import { secureFetch } from '../../shared/Services/secureFetch'
 import { APP_URLS } from '../../api/urls/url'
+
+// Components usados en esta entidad
+import ProductList from './product-list/product-list'
 
 export default function ProductsMain() {
     const productFormRef = useRef<HTMLFormElement>(null)
@@ -181,7 +184,11 @@ export default function ProductsMain() {
                 </form>
 
             </div>
+            
         </section>
+
+        <ProductList />
+
 
         <VerifyAddProduct setIsOpen={setIsOpen} isOpen={isOpen} accept={handleFormSubmit} name={formData.desc} description={formData.desc} unit={formData.quantity} cost={formData.cost_u} date={brd_Date.toISOString().slice(0,10)} 
         loading={loading}

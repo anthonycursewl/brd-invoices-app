@@ -5,6 +5,12 @@
     width: 90%;
 }
 
+@media (max-width: 1400px) {
+    .payments-main {
+        width: 95%;
+    }
+}
+
 .payments-utils {
     display: flex;
     align-items: center;
@@ -15,6 +21,12 @@
     min-height: 300px;
     border-radius: 12px;
     flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    .payments-utils {
+        margin-top: .2rem;
+    }
 }
 
 .payments-utils-title {
@@ -103,6 +115,7 @@
     background: linear-gradient(10deg, #081e1f91, #14253f91);
 }
 
+
 .payments-in-p {
     display: flex;
     align-items: flex-start;
@@ -157,7 +170,7 @@
 
 .payments-in-p-2 .type-currency {
     width: 100%;
-    padding: .6rem .8rem;
+    padding: .5rem .5rem;
     border-radius: 18px;
     background: #3b3b3b25;
     color: #fdfdfd;
@@ -170,7 +183,7 @@
 
 .payments-in-p-2 .type-currency:hover {
     width: 100%;
-    padding: .6rem .8rem;
+    padding: .5rem .5rem;
     border-radius: 18px;
     background: #52515125;
     color: #fdfdfd;
@@ -228,6 +241,7 @@
     border-top: 1px dashed #0b241d91;
     transition: .2s ease-in-out;
     font-size: .9rem;
+    width: 100%;
 }
 
 .payments-total {
@@ -348,3 +362,93 @@
 }
 
 /* Button generate invoice */
+
+@media (max-width: 768px) {
+    .payments-options {
+        grid-template-columns: 1fr;
+    }
+
+    .payments-in-p input {
+        width: 100%;
+    }
+
+    .payments-in-p-2 input {
+        width: 100%;
+    }
+
+    .payments-in-p-2 {
+        gap: .5rem;
+    }
+
+    .modal-currency div {
+        width: 100%;
+    }
+
+    .payments-utils-title h1 {
+        font-size: .8rem;
+    }
+
+    .payments-options-form p {
+        font-size: .8rem;
+    }
+
+    .payments-options-form {
+        flex-wrap: wrap;
+        align-items: flex-start;
+        gap: .5rem;
+        padding: .9rem;
+    }
+
+    .payments-options-btn-generate {
+        width: 100%;
+    }
+
+    .payments-options-btn-generate button {
+        padding: .4rem .6rem;
+        font-size: .7rem;
+    }
+
+    .payments-options-btn-generate button:hover {
+        padding: .4rem .6rem;
+        font-size: .7rem;
+    }
+
+    .payments-options .payments-in-p label {
+        font-size: .8rem;
+    }
+
+    .payments-options .payments-in-p-2 label {
+        font-size: .8rem;
+    }
+
+    .payments-button button svg {
+        width: 18px;
+        height: auto;
+    }
+
+    .payments-button button {
+        font-size: .8rem;
+    }
+
+
+}
+
+@media (max-width: 1740px) {
+    .payments-products-titles div p {
+        max-width: 195px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: .9rem;
+        text-wrap: nowrap;
+    }
+    
+    .payments-total {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1600px) {
+    .payments-products-titles {
+        display: none;
+    }
+}

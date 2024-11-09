@@ -12,6 +12,7 @@ export const URL = {
         DELETE: 'delete',
         VERIFY: 'verify',
         GET: 'get',
+        ALL: 'all'
     },
     AUTH: {
         LOGIN: 'login',
@@ -24,5 +25,6 @@ export const APP_URLS = {
     AUTH_LOGIN: `${URL.BASE_URL}/${URL.ENTITIES.USERS}/${URL.AUTH.LOGIN}`,
     AUTH_REGISTER: `${URL.BASE_URL}/${URL.ENTITIES.USERS}/${URL.AUTH.REGISTER}`,
     CREATE_PRODUCT: `${URL.BASE_URL}/${URL.ENTITIES.PRODUCTS}/${URL.ACTIONS.CREATE}`,
+    GET_ALL_PRODUCTS: `${URL.BASE_URL}/${URL.ENTITIES.PRODUCTS}/${URL.ACTIONS.GET}/${URL.ACTIONS.ALL}`
 }
 
