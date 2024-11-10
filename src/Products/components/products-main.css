@@ -218,6 +218,13 @@
     background: #f7df551f;
 }
 
+.products-main-cn {
+    width: 100%;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
 @media (max-width: 1400px) {
     .products-main {
         width: 95%;

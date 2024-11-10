@@ -1,15 +1,11 @@
 import './ModalWarn.css'
 import { createPortal } from 'react-dom'
 import { CloseModal, ErrorIcon, SuccessIcon, WarningIcon } from '../../../assets/svgs/login/close-modal'
+import { ModalWarnProps } from '../../Interfaces/ModalWarnProps'
 
-interface ModalWarnProps {
-    options: any
-    setOptions: any
-}
-
-export default function ModalWarn({ setOptions, options }: ModalWarnProps) {
+export default function ModalWarn({ options, setOptions }: ModalWarnProps) {
     const handleState = () => {
-        setOptions({ state: false, type: options.type })
+        setOptions({ state: false })
     }
     
     return (
@@ -32,6 +28,14 @@ export default function ModalWarn({ setOptions, options }: ModalWarnProps) {
                 <div className={`m_warn_text_2 ${options.state ? 'm_warn_text_2_active' : ''}`}>
                     <p>{options.text}</p>
                 </div>
+
+                {
+                    options.type === 'warning' ? (
+                        <div className={`m_warn_text_3 ${options.state ? 'm_warn_text_3_active' : ''}`} onClick={handleState}>
+                            <p>Continuar</p>
+                        </div>
+                    ) : null
+                }
 
             </div>
         </div>,
