@@ -8,6 +8,10 @@ interface GlobalState {
     setAuthToken: (v: string) => void
     menuNavStatus: boolean
     setMenuNavStatus: (v: boolean) => void
+    signalReload: number
+    updateSignalReload: (sg: number) => void,
+    isOpenConfirm: boolean,
+    setIsOpenConfirm: (v: boolean) => void
 }
 
 const isDarkMode = getCookie('theme');
@@ -19,6 +23,10 @@ export const useGlobalState = create<GlobalState>((set) => ({
   setAuthToken: (v: string) => set({ AuthToken: v }),
   menuNavStatus: false,
   setMenuNavStatus: (v: boolean) => set({ menuNavStatus: v }),
+  signalReload: 0,
+  updateSignalReload: (sg: number) => set({ signalReload: sg }),
+  isOpenConfirm: false,
+  setIsOpenConfirm: (v: boolean) => set({ isOpenConfirm: v }),
 }));  
 
 

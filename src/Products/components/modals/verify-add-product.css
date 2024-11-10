@@ -1,12 +1,14 @@
 .v_product {
     position: fixed;
+    left: 0;
+    top: 0;
+    visibility: visible;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    z-index: 1000;
     width: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(204, 109, 109, 0.5);
     transition: .2s ease-in-out;
     pointer-events: none;
     opacity: 0;
@@ -37,6 +39,7 @@
     border: 1px solid #c0c0c01a;
     transition: .4s ease-in-out;
     transform: translateY(-30px);
+    z-index: 2;
 }
 
 .v_product_content_acitve {
