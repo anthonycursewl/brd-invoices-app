@@ -11,6 +11,7 @@ import ModalWarn from '../../shared/Modal/modal-warn/ModalWarn'
 // Constantes de la app
 import { API_URL } from '../../Config/tajinside.config'
 import { createCookie } from '../../shared/Cookies/setCookie'
+import { Link } from 'react-router-dom'
 
 // Importación del useState
 import { useState } from 'react'
@@ -167,6 +168,10 @@ export default function Login() {
                                         :
                                     <button>Iniciar Sesión</button>
                                 }
+                            </div>
+
+                            <div className='login-s-t-register'>
+                                <Link to={'/register'}>¿Aún no tienes una cuenta? ¡Registrate aquí!</Link>
                             </div>
                         </div>
                     </form>

@@ -1,0 +1,129 @@
+.m-qr-barcode {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: #000000a9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: .2s ease-in-out;
+}
+
+.m-qr-barcode-active {
+    opacity: 1;
+    pointer-events: inherit;
+}
+
+.m-qr-barcode-cn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    flex-direction: column;
+    gap: .5rem;
+    background: #080808;
+    padding: 1rem;
+    border-radius: 12px;
+    transform: translateY(-15px);
+    transition: .2s ease-in-out;
+    opacity: 0;
+    border: 1px solid #1a1b1b62;
+}
+
+.m-qr-barcode-cn-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    flex-direction: column;
+    gap: 1.2rem;
+    background: #080808;
+    padding: 1rem;
+    border-radius: 12px;
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+/* SVGS styles */
+
+.m-qr-barcode-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.m-qr-barcode-options button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0e0d0dcb;
+    border: none;
+    border-radius: 50%;
+    padding: .5rem;
+    transition: .3s ease-in-out;
+}
+
+.m-qr-barcode-options button:hover {
+    background: #161616cb;
+    cursor: pointer;
+}
+
+.m-qr-barcode-options button  svg {
+    width: 18px;
+    height: auto;
+}
+
+.m-qr-barcode-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    font-size: .8rem;
+    border: 1px dashed #202222;
+    padding: .5rem .8rem;
+    border-radius: 12px;
+}
+
+.m-qr-barcode-info svg {
+    width: 20px;
+    height: auto;
+}
+
+.m-qr-barcode-info > svg {
+    transition: .2s ease-in-out;
+    animation: rotateAll180deg 0.8s linear infinite;
+}
+
+.m-qr-barcode-info:hover > svg {
+    transition: .2s ease-in-out;
+    filter: drop-shadow(0 0 9px rgba(245, 250, 249, 0.452));
+}
+
+@keyframes rotateAll180deg {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+/* SVGS styles */
+
+
+@media (max-width: 768px) {
+    .m-qr-barcode-cn {
+        width: 100%;
+    }
+
+    .m-qr-barcode {
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+}

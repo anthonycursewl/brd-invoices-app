@@ -1,5 +1,7 @@
 import { create } from "zustand";
 import { getCookie } from "../shared/Cookies/GetCookie";
+import { TypeNotification } from "../shared/Interfaces/TypeNotification";
+
 
 interface GlobalState {
     isDarkMode: boolean
@@ -11,7 +13,16 @@ interface GlobalState {
     signalReload: number
     updateSignalReload: (sg: number) => void,
     isOpenConfirm: boolean,
-    setIsOpenConfirm: (v: boolean) => void
+    setIsOpenConfirm: (v: boolean) => void,
+    modalQrBarcode: boolean,
+    setModalQrBarcode: (v: boolean) => void,
+
+    // States and values for System Notification
+    isNotification: boolean,
+    setIsNotification: (v: boolean) => void
+    currentNotification: TypeNotification[],
+    setCurrentNotification: (v: TypeNotification[]) => void,
+    sendNewNotification: (v: TypeNotification, cNotis: TypeNotification[]) => void
 }
 
 const isDarkMode = getCookie('theme');
@@ -27,6 +38,15 @@ export const useGlobalState = create<GlobalState>((set) => ({
   updateSignalReload: (sg: number) => set({ signalReload: sg }),
   isOpenConfirm: false,
   setIsOpenConfirm: (v: boolean) => set({ isOpenConfirm: v }),
+  modalQrBarcode: false,
+  setModalQrBarcode: (v: boolean) => set({ modalQrBarcode: v }),
+
+  // States and values for System Notification
+  isNotification: false,
+  setIsNotification: (v: boolean) => set({ isNotification: v }),
+  currentNotification: [{ message: '', title: '', type: '' }],
+  setCurrentNotification: (v: TypeNotification[]) => set({ currentNotification: v }),
+  sendNewNotification: (v: TypeNotification, cNotis: TypeNotification[]) => set({ currentNotification: [...cNotis, v], isNotification: true }),
 }));  
 
 
