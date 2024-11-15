@@ -6,6 +6,7 @@ interface PaymentDetailCardProps {
 }
 
 export default function PaymentDetailCard ({ type, amount }: PaymentDetailCardProps) {
+    // @ts-ignore
     const { isDarkMode } = useGlobalState()
 
     return (

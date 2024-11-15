@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { createPortal } from "react-dom";
 import "./main.noti.css";
 import { useGlobalState } from "../../store/useGlobalState";

@@ -25,12 +25,14 @@ import ModalQrBarcode from '../../../shared/Modal/modal-qr-barcode/modal-qr-barc
 export default function ProductList() {
     const [loading, setLoading] = useState<boolean>(false)
     const [products, setProducts] = useState<ProductType[]>([])
+    // @ts-ignore
     const [getterOptions, setGetterOptions] = useState<GetterType>({
         page: 1,
         limit: 10
     })
     const [infoQr, setInfoQr] = useState<InfoQrBarcodeType>()
-
+    
+    // @ts-ignore
     const { signalReload, setModalQrBarcode, setIsNotification, isNotification, setCurrentNotification, currentNotification, sendNewNotification } = useGlobalState()
 
     

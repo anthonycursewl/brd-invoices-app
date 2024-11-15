@@ -1,8 +1,6 @@
 import { useGlobalState } from "../../store/useGlobalState";
 import "./navbar.css";
 import Option from "../../shared/components/SideMenu/comp/option";
-// Hooks
-import { useState } from "react";
 
 // Importación de los SVGs
 import WorkSpaceIcon from "../../assets/svgs/workspace-icon";

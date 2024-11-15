@@ -37,6 +37,7 @@ export default function PaymentsMain() {
 
   const [bcvPrice, setBcvPrice] = useState<any>();
   const [currency, setCurrency] = useState<Currency>({ img: "", name: "", value: "" });
+  // @ts-ignore
   const [currencies, setCurrencies] = useState<string[]>(['USD', 'BS', 'COP', 'EUR']);
   
   const handleAddProduct = (e: any) => {

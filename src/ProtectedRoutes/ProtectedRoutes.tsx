@@ -3,7 +3,6 @@ import { secureFetch } from "../shared/Services/secureFetch"
 // Hooks de react
 import { useEffect, useState } from "react"
 import { deleteCookie } from "../shared/Cookies/DeleteCookie"
-import LoadingSession from "./components/LoadingSession"
 import { APP_URLS } from "../api/urls/url"
 
 interface ProtectedRoutesProps {

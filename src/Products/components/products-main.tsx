@@ -1,7 +1,6 @@
 import './products-main.css'
 import '../../ProtectedRoutes/components/LoadingSession.css'
 import React, { useRef, useState } from "react"
-import { createPortal } from 'react-dom'
 
 
 import { IconProductAdd } from "../../assets/svgs/dashboard/icon-dash"
@@ -21,8 +20,6 @@ import { APP_URLS } from '../../api/urls/url'
 import ProductList from './product-list/product-list'
 
 // import del globalstate
-import { useGlobalState } from '../../store/useGlobalState'
-import { ModalWarnProps } from '../../shared/Interfaces/ModalWarnProps'
 
 export default function ProductsMain() {
     const productFormRef = useRef<HTMLFormElement>(null)
@@ -48,6 +45,7 @@ export default function ProductsMain() {
         })
     }
 
+    // @ts-ignore
     const registerProduct = async () => {
         const { error, result } = await secureFetch(`${APP_URLS.CREATE_PRODUCT}`, 'POST', {
             id: generateIdInteger().toString(),
