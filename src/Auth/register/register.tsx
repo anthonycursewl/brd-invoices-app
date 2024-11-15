@@ -11,6 +11,7 @@ import { brd_date } from '../auth.config'
 import { useState } from 'react'
 import { secureFetch } from '../../shared/Services/secureFetch'
 import { API_URL } from '../../Config/tajinside.config'
+import { Link } from 'react-router-dom'
 
 // Import del ModalWarn
 import ModalWarn from '../../shared/Modal/modal-warn/ModalWarn'
@@ -188,6 +189,10 @@ export default function Register() {
                                     )
                                     : 'Cargando...'
                                 }
+                            </div>
+
+                            <div className='login-s-t-l'>
+                                <Link to={'/login'}>¿Ya tienes una cuenta? Inicia sesión aquí</Link>
                             </div>
                         </div>
                     </form>

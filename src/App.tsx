@@ -13,6 +13,7 @@ const Login = lazy(() => import("./Auth/Login/login"));
 const Register = lazy(() => import("./Auth/register/register"));
 const Payments = lazy(() => import("./Payments/payments"));
 const Products = lazy(() => import("./Products/products"));
+const MainNotification = lazy(() => import("./shared/SystemNotification/main.notification"));
 
 function App() {
   const { toggleTheme } = useGlobalState();
@@ -35,6 +36,10 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Suspense>
+        <MainNotification />
+      </Suspense>
+      
       <Routes>
         <Route 
         path="/"

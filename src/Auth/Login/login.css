@@ -210,4 +210,38 @@
     z-index: -1;
 }
 
+.login-s-t-register {
+    font-size: .9rem;
+    color: #31614c;
+    transition: .2s ease-in-out;
+}
+
+.login-s-t-register:hover {
+    font-size: .9rem;
+    color: #2f8b62;
+    filter: drop-shadow(0 0 9px rgba(0, 255, 179, 0.452));
+    cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+    .login-title-cn {
+        display: none;
+    }
+
+    .login-form {
+        width: 100%;
+    }
+
+    .login-place-content {
+        width: 50%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .login-place-content {
+        width: 98%;
+    }
+}
+
 /* MEDIA QUERIES */

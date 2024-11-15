@@ -30,7 +30,7 @@ export default function ModalWarn({ options, setOptions }: ModalWarnProps) {
                 </div>
 
                 {
-                    options.type === 'warning' ? (
+                    options.type === 'question' ? (
                         <div className={`m_warn_text_3 ${options.state ? 'm_warn_text_3_active' : ''}`} onClick={handleState}>
                             <p>Continuar</p>
                         </div>

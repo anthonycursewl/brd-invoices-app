@@ -230,3 +230,28 @@
         width: 95%;
     }
 }
+
+@media (max-width: 768px) {
+    .product-options {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .products-in-p input {
+        width: 100%;
+    }
+
+    .products-in-p-2 div {
+        width: 100%;
+    }
+    
+    .products-in-p-2 input {
+        width: 100%;
+    }
+
+    .products-options-form {
+        gap: .8rem;
+        flex-wrap: wrap;
+    }
+   
+}

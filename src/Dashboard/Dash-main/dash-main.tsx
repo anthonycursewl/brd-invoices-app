@@ -4,6 +4,9 @@ import { DashCard } from '../Dash-cards/dash.card'
 import Tooltip from '../../shared/components/tips/Tooltip'
 import DashSections from '../Dash-sections/dash-sections'
 
+// SystemNotification import
+import MainNotification from '../../shared/SystemNotification/main.notification'
+
 export default function DashMain() {
     
     const username = localStorage.getItem('username')
@@ -36,6 +39,8 @@ export default function DashMain() {
 
                 <DashSections />
 
+
+                <MainNotification />
             </div>
         </section>
     )
