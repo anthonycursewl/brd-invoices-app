@@ -15,19 +15,19 @@ export default function ProtectedRoutes({ children }: ProtectedRoutesProps) {
     const { pathname } = useLocation()
 
     const verifyIsAtuthenticated = async () => {
-        const { result } = await secureFetch(APP_URLS.VERIFY_TOKEN, 'GET', null, setLoading)
+        const { result, error } = await secureFetch(APP_URLS.VERIFY_TOKEN, 'GET', null, setLoading)
 
         if (result?.status === 200) {
             setIsAuth(true)
         } else {
             setIsAuth(false)
             deleteCookie('AuthTokenBRD')
+            console.log(error)
         }
     }
 
     useEffect(() => {
         verifyIsAtuthenticated()
-        
         console.log(`TAJ INSIDE | ${pathname}`)
     }, [pathname])
 

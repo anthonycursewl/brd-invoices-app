@@ -1,5 +1,7 @@
+import { API_URL } from "../../Config/tajinside.config"
+
 export const URL = {
-    BASE_URL: 'http://localhost:3000',
+    BASE_URL: `${API_URL}`,
     ENTITIES: {
         USERS: 'users',
         PAYMENTS: 'payments',
