@@ -1,7 +1,6 @@
 import './login.css'
 import '../../ProtectedRoutes/components/LoadingSession.css'
 import { useEffect, useRef } from 'react'
-import TajLogoRaw from '../../assets/svgs/login/tajlogo-raw'
 import SecurityIcon from '../../assets/svgs/login/security-icon'
 import IntegrityIcon from '../../assets/svgs/login/integrity'
 import { AutoIcon } from '../../assets/svgs/login/integrity'

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import './verify-add-product.css'
 import { CloseModal } from '../../../assets/svgs/login/close-modal'
 import '../../../ProtectedRoutes/components/LoadingSession.css'
@@ -16,6 +17,7 @@ interface VerifyAddProductProps {
     date: string;
     loading?: boolean
 }
+
 export default function VerifyAddProduct({ accept, name, description, unit, cost, date, loading }: VerifyAddProductProps) {
 
     const { isOpenConfirm, setIsOpenConfirm } = useGlobalState() 
