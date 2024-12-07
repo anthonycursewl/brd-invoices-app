@@ -228,3 +228,11 @@
 }
 
 /* Style sessions */
+
+/* BRD-CONFIG | Media queries */
+
+@media (max-width: 768px) {
+    .config-current-session {
+        width: 100%;
+    }
+}

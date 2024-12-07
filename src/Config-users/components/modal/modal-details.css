@@ -52,7 +52,7 @@
     border: 1px solid #cfcfcf15;
     visibility: visible;
     opacity: 1;
-    transition: .2s ease-in-out;
+    transition: .1s ease-in-out;
     transform: translateY(0px) translateX(0px);
 }
 
@@ -204,9 +204,10 @@
 
 @media (max-width: 768px) {
     .modal-details-cn {
-        width: 80%;
+        width: 95%;
+        transition: .1s ease-in-out;
     }
-    
+
     .modal-details-cn-active {
         width: 95%;
     }
@@ -219,6 +220,22 @@
 
     .modal-icon-x p {
         font-size: .7rem;
+    }
+
+    .modal-details {
+        transition: .1s ease-in-out;
+    }
+
+    .modal-details-active {
+        transition: .1s ease-in-out;
+    }
+
+    .modal-details-cn {
+        transition: .1s ease-in-out;
+    }
+
+    .modal-details-cn-active {
+        transition: .1s ease-in-out;
     }
 }
 
