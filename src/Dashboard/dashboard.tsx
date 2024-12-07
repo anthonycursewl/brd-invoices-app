@@ -11,13 +11,11 @@ export default function Dashboard() {
     }, [])  
 
     return (
-        <>
+        <ContainerMain backgroundColor={'transparent'}>
             <Navbar />
-            <ContainerMain backgroundColor={'transparent'}>
 
                 <DashMain />
                           
-            </ContainerMain>
-        </>
+        </ContainerMain>
     )
 }

@@ -1,4 +1,4 @@
-// @ts-nocheck
+/// @ts-nocheck
 import { createPortal } from "react-dom";
 import "./main.noti.css";
 import { useGlobalState } from "../../store/useGlobalState";
@@ -20,7 +20,7 @@ export default function MainNotification() {
 
   useEffect(() => { 
     const timers = currentNotification.map((notification, index) => {
-      const timeout = (index + 1) * 1000; 
+      const timeout = (index + 1) * 2500; 
 
      const timer = setTimeout(() => {
         handleRemoveNotification(index);

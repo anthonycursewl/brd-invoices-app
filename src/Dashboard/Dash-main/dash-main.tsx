@@ -6,10 +6,12 @@ import DashSections from '../Dash-sections/dash-sections'
 
 // SystemNotification import
 import MainNotification from '../../shared/SystemNotification/main.notification'
+import { CARD_TYPE } from '../../Config/tajinside.config'
+import { useGlobalState } from '../../store/useGlobalState'
 
 export default function DashMain() {
     
-    const username = localStorage.getItem('username')
+    const { infoUser } = useGlobalState()
 
     return (
         <section className='dash-main'>
@@ -20,7 +22,7 @@ export default function DashMain() {
                 <div className='dash-utils-cn'>
                     <div className='dash-user-info'>
                         <img src="/icons-dash/user-img.svg" alt="User in the app" />
-                        <h1>Bienvenido {username}</h1>
+                        <h1>Bienvenido <span className='brd-username-color'>{infoUser.name.split(' ')[0]} {infoUser.name.split(' ')[2]}</span></h1>
                     </div>
                     
                     <div className='dash-info-user-account'>
@@ -30,10 +32,10 @@ export default function DashMain() {
 
                 <div className='dash-cards'>
                     <Tooltip tooltipText='Tarjeta BRD-S Click para ver más'>
-                        <DashCard cardExpires='10/23' cardNumber='1234 1234 1234 1234' cardType='brd-d-card-gold'/>
+                        <DashCard cardExpires='10/23' cardNumber={crypto.randomUUID().split('-')[0]} cardType={CARD_TYPE.REPOSITORY.SIZE.SMALL.BRD_GOLD} size='small'/>
                     </Tooltip>
                     <Tooltip tooltipText='Tarjeta BRD-S Click para ver más'>
-                        <DashCard cardExpires='10/23' cardNumber='1234 1234 1234 1234' cardType='brd-d-card-black'/>
+                        <DashCard cardExpires='10/23' cardNumber={crypto.randomUUID().split('-')[0]} cardType={CARD_TYPE.REPOSITORY.SIZE.SMALL.BRD_BLACK} size='small'/>
                     </Tooltip>
                 </div>
 

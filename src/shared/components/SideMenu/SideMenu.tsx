@@ -8,8 +8,11 @@ import AccountIcon from '../../../assets/svgs/account-icon'
 import IconDash, { IconProducts } from '../../../assets/svgs/dashboard/icon-dash'
 import { IconCards } from '../../../assets/svgs/dashboard/icon-dash'
 import { IconList } from '../../../assets/svgs/dashboard/icon-dash'
+import { useGlobalState } from '../../../store/useGlobalState'
 
 export default function SideMenu() {
+
+    const { infoUser } = useGlobalState()
 
     return (
         <div className={`side-menu`}>
@@ -30,9 +33,9 @@ export default function SideMenu() {
                             <IconList />
                             Pagos
                         </Option>
-                        <Option path='/dashboard/cards'>
+                        <Option path={`/dashboard/repositories/${infoUser.id}`}>
                             <IconCards />
-                            Repositories BRD-S
+                            Repositories BRD-R
                         </Option>
                         <Option path='/dashboard/products/add'>
                             <IconProducts />
@@ -48,11 +51,11 @@ export default function SideMenu() {
                     </div>
 
                     <div className='side-menu-subtitles'>
-                        <Option>
+                        <Option path={`/dashboard/profile/${infoUser.id}`}>
                             <IconDash />
                             Perfil
                         </Option>
-                        <Option>
+                        <Option path={`/dashboard/config/${infoUser.id}`}>
                             <IconList />
                             Configuración
                         </Option>

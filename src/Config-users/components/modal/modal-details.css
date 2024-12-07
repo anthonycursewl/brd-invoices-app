@@ -1,0 +1,243 @@
+.modal-details {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.212);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s ease-in-out;
+}
+
+.modal-details-cn {
+    background: linear-gradient(45deg, #070606ef, #080707ef, #030303ef);
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    border: 1px solid #cfcfcf15;
+    visibility: hidden;
+    opacity: 0;
+    transition: .2s ease-in-out;
+    transform: translateY(-20px)
+    translateX(-2px);
+}
+
+.modal-details-active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: visible;
+    opacity: 1;
+    transition: .2s ease-in-out;
+}
+
+.modal-details-cn-active {
+    background: linear-gradient(45deg, #070606ef, #080707ef, #030303ef);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #cfcfcf15;
+    visibility: visible;
+    opacity: 1;
+    transition: .2s ease-in-out;
+    transform: translateY(0px) translateX(0px);
+}
+
+
+/* Estilos de adentro del modal */
+
+.modal-details-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: .8rem;
+    gap: .5rem;
+    border-bottom: 1px solid #cfcfcf15;
+}
+
+.modal-details-session {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: .8rem;
+}
+
+.modal-details-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .4rem;
+}
+
+.modal-details-title svg {
+    width: 22px;
+    height: auto;
+    margin-bottom: .1rem;
+    transition: .2s ease-in-out;
+    animation: animateSvgBrowser 1.5s infinite;
+}
+
+@keyframes animateSvgBrowser {
+    0% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(15deg);
+        filter: drop-shadow(0 0 9px rgba(255, 44, 29, 0.959));
+    }
+    75% {
+        transform: rotate(15deg);
+    }
+    100% {
+        transform: rotate(-15deg);
+    }
+}
+
+.modal-details-trash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.modal-details-trash svg {
+    width: 25px;
+    height: auto;
+    margin-bottom: .1rem;
+}
+
+.modal-icon-trash svg {
+    width: 22px;
+    height: auto;
+    transition: .2s ease-in-out;
+}
+
+.modal-icon-trash svg:hover {
+    transition: .2s ease-in-out;
+    rotate: 20deg;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgba(255, 7, 7, 0.822));
+}
+
+.modal-details-part p {
+    font-size: .95rem;
+    color: #b3b3b3;
+    max-width: 200px;
+    overflow: hidden;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+}
+
+.modal-details-part span {
+    display: block;
+    font-size: .9rem;
+    color: #636363;
+    max-width: 210px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.modal-icon-x {
+    width: 22px;
+    height: 22px;
+    margin-bottom: .1rem;
+    color: #b3b3b3;
+    transition: .2s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #a1a1a15b;
+    padding: .4rem;
+}
+
+.modal-icon-x:hover {
+    background: #1b1919ef;
+    border: 1px solid #a1a1a15b;
+    cursor: pointer;
+}
+
+.modal-icon-x p {
+    font-size: .7rem;
+}
+
+.modal-icon-trash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-icon-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.modal-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+
+.modal-options span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .modal-details-cn {
+        width: 80%;
+    }
+    
+    .modal-details-cn-active {
+        width: 95%;
+    }
+
+    .modal-icon-x {
+        width: 25px;
+        height: 25px;
+        padding: 0;
+    }
+
+    .modal-icon-x p {
+        font-size: .7rem;
+    }
+}
+
+.modal-spinner-loading {
+    width: 20px;
+    height: 20px;
+    border: 2px dashed #b3b3b3;
+    border-radius: 50%;
+    border-top: 1px solid #47b5c4c5;
+    animation: spinner 0.8s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Estilos de adentro del modal */

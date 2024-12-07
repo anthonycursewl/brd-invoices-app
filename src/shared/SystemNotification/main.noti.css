@@ -39,7 +39,7 @@
     font-size: .9rem;
     color: rgb(230, 230, 230);
     margin-bottom: .2rem;
-    max-width: 300px;
+    width: 270px;
 }
 
 .s-noti-content-single-active {
@@ -47,7 +47,7 @@
     padding: .5rem .9rem;
     border-radius: .9rem;
     border: 1px solid #1a1b1b62;
-    font-size: .9rem;
+    font-size: 1rem;
     color: rgb(230, 230, 230);
 }
 
@@ -58,7 +58,7 @@
 }
 
 .s-notification-icon svg {
-    width: 20px;
+    width: 18px;
     height: auto;
 }
 
@@ -66,6 +66,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: .6rem;
+    gap: .4rem;
     width: 100%;
+    margin-bottom: .2rem;
 }

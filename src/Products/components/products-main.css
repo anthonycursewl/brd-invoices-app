@@ -222,7 +222,6 @@
     width: 100%;
     display: grid;
     gap: 1rem;
-    margin-bottom: 2rem;
 }
 
 @media (max-width: 1400px) {

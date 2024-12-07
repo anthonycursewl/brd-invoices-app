@@ -1,0 +1,454 @@
+.brd-r-utils {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+}
+
+.brd-r-utils-cn {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border: 2px dashed #42424279;
+  margin-top: 1.2rem;
+  margin-right: 1rem;
+  border-radius: 12px;
+  min-height: 200px;
+}
+
+/* BRD-R | Repositorios */
+
+.brd-r-utils-title {
+  width: 100%;
+  font-weight: 500;
+  background: #47474710;
+  padding: 1rem;
+  border-radius: 12px 12px 0 0;
+  font-size: 0.6rem;
+  color: #fdfdfd;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.brd-r-utils-title svg {
+  width: 20px;
+  height: auto;
+}
+
+.brd-r-color {
+  background-image: linear-gradient(20deg, #55fcbe, #7bd4fd, #28fcf1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* BRD-R | Repositorios */
+
+/* BRD-R | Introduction */
+
+.brd-r-introduce-repositories {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brd-r-title {
+  text-align: center;
+  position: relative;
+}
+
+.brd-r-title-center {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brd-r-shadow {
+  width: 50px;
+  height: 30px;
+  background-image: linear-gradient(20deg, #55fcbe, #7bd4fd, #28fcf1);
+  position: absolute;
+  top: 20px;
+  left: 40%;
+  transform: translateX(-50%) rotate(45deg);
+  z-index: -1;
+  filter: blur(22px);
+  opacity: 0.5;
+}
+
+.brd-r-shadow-2 {
+  width: 50px;
+  height: 30px;
+  background-image: linear-gradient(20deg, #55fcbe, #fdc97b, #28fcf1);
+  position: absolute;
+  top: 20px;
+  left: 60%;
+  transform: translateX(-50%) rotate(45deg);
+  filter: blur(22px);
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.brd-r-title h2 {
+  font-size: 1.2rem;
+  color: #f3f5f4;
+}
+
+.brd-r-title p {
+  font-size: 0.9rem;
+  color: transparent;
+  background-image: linear-gradient(20deg, #55fcbe, #7bd4fd, #28fcf1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-style: italic;
+  width: 350px;
+  text-align: center;
+}
+
+.brd-r-preview {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.brd-r-preview-repos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.brd-r-control-cat svg {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: -1px;
+  animation: makeFloat 2s ease-in-out infinite;
+}
+
+.brd-r-control-cat-2 svg {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 30px;
+  left: 105%;
+  animation: makeFloat 2.5s ease-in-out infinite;
+}
+
+.brd-r-control-cat-3 svg {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: 120%;
+  left: 50%;
+  animation: makeFloat 2.5s ease-in-out infinite;
+}
+
+.brd-r-control-cat-4 svg {
+  width: 35px;
+  height: auto;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  animation: makeFloat 2s ease-in-out infinite;
+}
+
+.brd-r-title-extra p {
+  color: rgb(150, 150, 150);
+  font-style: normal;
+  font-size: 0.8rem;
+  font-family: monospace, sans-serif;
+}
+
+.brd-r-title-extra {
+  background: linear-gradient(20deg, #091c1f, #0f1b22, #0c1b1b);
+  width: 100%;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+@keyframes makeFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* BRD-R | Introduction */
+
+/* BRD-R CREATE TITLE */
+
+.brd-r-create {
+  width: 100%;
+  padding: 1rem;
+  padding-top: 0;
+}
+
+.brd-r-create-title h2 {
+  font-size: 1rem;
+}
+
+.brd-r-create-title svg {
+  width: 25px;
+  height: auto;
+}
+
+.brd-r-create-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* BRD-R CREATE TITLE */
+
+/* BRD-R | Form repositories */
+
+.form-repo-input {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.form-repo-input input {
+  width: 90%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 18px;
+  background: #3b3b3b25;
+  color: #fdfdfd;
+  font-size: 0.8rem;
+  border: 0.2px solid #d3f4fa0a;
+  outline: none;
+  font-family: monospace, sans-serif;
+  transition: 0.2s ease-in-out;
+}
+
+.form-repo-input input:hover {
+  background: #4e4d4d25;
+  color: #adacac;
+  border: 0.2px solid #b4f1fc34;
+}
+
+.form-repo-input label {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #f0f8fc;
+}
+
+.form-repo-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0rem 0;
+}
+
+.form-repo-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+}
+
+.brd-r-date {
+  width: 90%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 18px;
+  background: #3b3b3b25;
+  color: #7e7e7e;
+  font-size: 0.8rem;
+  border: 0.2px solid #d3f4fa0a;
+  outline: none;
+  font-family: monospace, sans-serif;
+  cursor: not-allowed;
+}
+
+.brd-r-repo-type {
+  width: 90%;
+  padding: 0.6rem 0.8rem;
+  border-radius: 18px;
+  background: #3b3b3b25;
+  color: #7e7e7e;
+  font-size: 0.8rem;
+  border: 0.2px solid #d3f4fa0a;
+  outline: none;
+  font-family: monospace, sans-serif;
+  min-height: 41px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.brd-r-repo-type:hover {
+  background: #4e4d4d25;
+  color: #adacac;
+  border: 0.2px solid #b4f1fc34;
+}
+
+.form-repo-button button {
+  padding: 0.4rem;
+  width: 100px;
+  border-radius: 18px;
+  background: #3b3b3b25;
+  color: #9ffff7;
+  font-size: 0.8rem;
+  border: 0.2px solid #d3f4fa0a;
+  outline: none;
+  transition: 0.2s ease-in-out;
+}
+
+.form-repo-button button:hover {
+  cursor: pointer;
+  border-color: #87ebfd65;
+  background: #091c1f;
+  width: 105px;
+}
+
+/* BRD-R | Form repositories */
+
+/* BRD-R | Form info inputs */
+
+.brd-r-repo-all-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.brd-r-repo-info {
+  width: 100%;
+  background: linear-gradient(to right, #1525305b, #2139465b);
+  padding: 1rem;
+  border-radius: 12px;
+  border: 1px solid #acf5ff1f;
+}
+
+.brd-r-repo-info h3 {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.brd-r-repo-info p {
+  font-size: 0.9rem;
+  color: #b9b9b9;
+}
+
+.brd-r-color-warning {
+  background-image: linear-gradient(20deg, #fce355, #ff7300, #fc6146);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.brd-r-color-success {
+  background-image: linear-gradient(20deg, #49e4ff, #ff7300, #46ff65);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/* BRD-R | Form info inputs */
+
+/* BRD-R | Media queries */
+
+@media (max-width: 1400px) {
+  .brd-r-utils-cn {
+    width: 95%;
+    margin-right: 0;
+    margin-top: 0;
+  }
+
+  .form-repo-group {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .form-repo-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .form-repo-input input {
+    width: 100%;
+  }
+
+  .brd-r-control-cat svg {
+    width: 26px;
+    top: 30%;
+    left: 10%;
+  }
+  
+  .brd-r-control-cat-2 svg {
+    width: 26px;
+    top:30%;
+    left: 85%;
+  }
+  
+  .brd-r-control-cat-3 svg {
+    width: 26px;
+    top: 112%;
+    left: 50%;
+  }
+  
+  .brd-r-control-cat-4 svg {
+    width: 26px;
+    top: -20%;
+    left: 50%;
+  }
+
+  .brd-r-utils-cn {
+    border-width: 0.5px;
+  }
+}
+
+@media (max-width: 568px) {
+  .brd-r-control-cat svg {
+    width: 26px;
+    top: 50%;
+    left: -21%;
+  }
+  
+  .brd-r-control-cat-2 svg {
+    width: 26px;
+    top: 50%;
+    left: 110%;
+  }
+  
+  .brd-r-control-cat-3 svg {
+    width: 26px;
+    top: 110%;
+    left: 50%;
+  }
+  
+  .brd-r-control-cat-4 svg {
+    width: 26px;
+    top: -10%;
+    left: 50%;
+  }
+}

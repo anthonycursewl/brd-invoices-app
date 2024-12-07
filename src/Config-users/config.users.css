@@ -1,0 +1,230 @@
+.main-config {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.config-utils {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed #42424279;
+    margin-top: 1.2rem;
+    margin-right: 1rem;
+    border-radius: 12px;
+}
+
+@media (max-width: 1400px) {
+    .config-utils {
+        width: 95%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .config-utils {
+        margin-top: 0;
+        border: 0.8px dashed #42424279;
+    }
+}
+
+/* Title in the app */
+
+.config-utils-content {
+    padding: 1.2rem;
+    width: 100%;
+}
+
+.config-utils-title {
+    width: 100%;
+    font-weight: 500;
+    background: #47474710;
+    padding: 1rem;
+    border-radius: 12px 12px 0 0;
+    font-size: .6rem;
+    color: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem
+}
+
+.config-utils-title svg {
+    width: 20px;
+    height: auto;
+}
+
+.config-utils-info-account {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+
+.config-utils-info-account h2 {
+   font-size: .9rem;
+   color: #acacac;
+}
+
+.config-u-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .8rem;
+}
+
+.config-u-title svg {
+    width: 35px;
+    height: auto;
+    padding: .4rem;
+    border: 1px solid #232e47;
+    border-radius: 50%;
+}
+
+.config-utils-divider {
+    width: 100%;
+    height: 100%;
+    border-left: 1px solid #232e47;
+    margin-left: 1.02rem;
+}
+
+.config-info-user {
+    background-image: linear-gradient(20deg, #55fcbe, #61ccfd, #28fcf1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.config-personal-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 1rem 1.5rem;
+    flex-direction: column;
+}
+
+.config-p-title p {
+    font-size: 1rem;
+    color: #6ee0d3;
+}
+
+.config-p-content p {
+    font-size: .9rem;
+    color: #d4d4d4;
+}
+
+/* Title in the app */
+
+
+/* Style sessions */
+
+.config-current-sessions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.config-current-session {
+    background: linear-gradient(10deg, #081e1f91, #14253f91);
+    border: 1px solid #c5c5c515;
+    border-radius: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: .9rem;
+    width: 280px;
+    transition: .1s ease-in-out;
+    backdrop-filter: blur(10px);
+}
+
+.config-current-session:hover {
+    transition: .1s ease-in-out;
+    box-shadow: 0px 0px 10px #14253f91;
+    cursor: pointer;
+    border: 1px solid #73bcf728;
+    border-radius: .9rem;
+    backdrop-filter: blur(10px);
+}
+
+.config-cs-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    gap: .5rem;
+    padding: .5rem;
+    width: 100%;
+    border-bottom: 1px solid #c5c5c515;
+}
+
+.config-cs-browser {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .5rem;
+}
+
+.config-cs-browser svg {
+    width: 22px;
+    height: auto;
+
+}
+
+.config-cs-trash svg {
+    width: 22px;
+    height: auto;
+    transition: .2s ease-in-out;
+}
+
+
+.config-cs-trash svg:hover {
+    transition: .2s ease-in-out;
+    rotate: 20deg;
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px rgba(255, 7, 7, 0.822));
+}
+
+.config-cs-trash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.config-cs-title p {
+    font-size: .9rem;
+    color: #e0f7fd;
+}
+
+.config-cs-network {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.config-cs-details {
+    padding: .5rem;
+    width: 100%;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+}
+
+.config-cs-network p, .config-cs-device p {
+    font-size: .9rem;
+    color: #b3b3b3;
+}
+
+.config-cs-network span, .config-cs-device span {
+    font-size: .8rem;
+    color: #636363;
+}
+
+/* Style sessions */

@@ -10,17 +10,14 @@
     color: #1a212b;
     background: #ffffff;
     background-image: linear-gradient(to bottom right, #dee2e2, #dee2e2, #c8e7e2, #dee2e2);
-    min-height: 100vh;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
     color: #ffffff;
-    animation: gradient 3s ease infinite;
     /* background-image: linear-gradient(to bottom right, #0e1116, #0e1116, #080f0e, #0e1116); */
     background: #0b1416;
-    min-height: 100vh;
     transition: .2s ease-in-out;
   }
   
@@ -50,19 +47,6 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
-}
-
-body::-webkit-scrollbar {
-  width: 5px;
-}
-
-body::-webkit-scrollbar-thumb {
-  background-color: #224d49;
-  border-radius: 2rem;
-}
-
-body::-webkit-scrollbar-track {
-  background-color: #122516;
 }
 
 h1, h2, h3, h4, h5, h6 {

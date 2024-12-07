@@ -2,7 +2,6 @@ import { create } from "zustand";
 import { getCookie } from "../shared/Cookies/GetCookie";
 import { TypeNotification } from "../shared/Interfaces/TypeNotification";
 
-
 interface GlobalState {
     isDarkMode: boolean
     toggleTheme: (v: boolean) => void
@@ -23,6 +22,10 @@ interface GlobalState {
     currentNotification: TypeNotification[],
     setCurrentNotification: (v: TypeNotification[]) => void,
     sendNewNotification: (v: TypeNotification, cNotis: TypeNotification[]) => void
+
+    // InfoUser
+    setInfoUser: (v: any) => void
+    infoUser: any
 }
 
 const isDarkMode = getCookie('theme');
@@ -47,7 +50,21 @@ export const useGlobalState = create<GlobalState>((set) => ({
   currentNotification: [{ message: '', title: '', type: '' }],
   setCurrentNotification: (v: TypeNotification[]) => set({ currentNotification: v }),
   sendNewNotification: (v: TypeNotification, cNotis: TypeNotification[]) => set({ currentNotification: [...cNotis, v], isNotification: true }),
-}));  
+
+  // Información del usuario
+  setInfoUser: (v: any) => set({ infoUser: v }),
+  infoUser: "",
+})); 
+
+interface ModalState {
+  isSessionsActive: boolean
+  setIsSessionActive: (v: boolean) => void
+}
+
+export const useModalState = create<ModalState>((set) => ({
+  isSessionsActive: false,
+  setIsSessionActive: (v: boolean) => set({ isSessionsActive: v }),
+}));
 
 
 

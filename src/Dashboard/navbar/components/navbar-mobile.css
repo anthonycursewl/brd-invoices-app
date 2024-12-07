@@ -1,0 +1,27 @@
+.navbar-logo-mobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-ph img {
+    width: 35px;
+    height: auto;
+}
+
+.nav-ph p {
+    background-image: linear-gradient(20deg, #10ee9d, #e4be54, #13fff3);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: .2s ease-in-out;
+}
+
+.nav-ph {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .2rem;
+}
+

@@ -52,7 +52,7 @@ export default function Login() {
             return
         }
 
-        const { result, error } = await secureFetch(`${API_URL}/users/login`, 'POST', {
+        const { result, error } = await secureFetch(`${API_URL}/users/login/${crypto.randomUUID()}`, 'POST', {
             email: email.value.trim(),
             password: password.value.trim()
         }, setLoading)
@@ -60,7 +60,7 @@ export default function Login() {
         if (result) {
             console.log(result)
             setOptions({ state: true, text: result.message, type: 'success' })
-            createCookie('AuthTokenBRD', result?.token, 3650 * 2)
+            createCookie('AuthTokenBRD', result?.token, 250, false, false)
             
             setTimeout(() => {
                 navigate('/dashboard') 

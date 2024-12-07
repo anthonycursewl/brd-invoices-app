@@ -5,11 +5,14 @@ import { motion } from "framer-motion";
 export default function CardNotification({ notification, index }: { notification: TypeNotification; index: number }) {
   return (
     <motion.aside key={index} className="s-noti-content-single" 
-    initial={{ opacity: 0 }}
-    whileInView={{ opacity: 1 }}
-    transition={{ duration: 0.3 }}
-    viewport={{ once: true }}>
+    initial={{ x: 150, y: -1, opacity: 0 }}
+    whileInView={{ x: 0, y: 0, opacity: 1 }}
+    transition={{ duration: 0.5, ease: "easeInOut" }}
+    viewport={{ once: false }}
+    exit={{ opacity: 0, x: 100, y: 5 }}
+    >
       <div className="s-n-content">
+        
         <div className="s-notification-icon">
           {notification.type === "success" ? (
             <SuccessIcon />
@@ -26,7 +29,7 @@ export default function CardNotification({ notification, index }: { notification
       </div>
 
       <div>
-        <p>{notification.message + "  " + "Prueba de sistemas de notis"}</p>
+        <p>{notification.message}</p>
       </div>
     </motion.aside>
   );

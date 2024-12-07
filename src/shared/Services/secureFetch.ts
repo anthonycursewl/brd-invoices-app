@@ -1,6 +1,6 @@
 import { getCookie } from "../Cookies/GetCookie";
-
-export const secureFetch = async (url: string, method: string, body: any, setLoading: (v: boolean) => void) => {
+// @ts-ignore
+export const secureFetch = async (url: string, method: string, body: any, setLoading: (v: boolean) => void, redirect?: (path: string) => void) => {
     try {
         setLoading(true);
         const response = await fetch(url, {
@@ -14,13 +14,13 @@ export const secureFetch = async (url: string, method: string, body: any, setLoa
 
         if (!response.ok) {
             const error = await response.json();
-            throw new Error(error.message);
+            return { error: error }
         }
 
         const data = await response.json();
         setLoading(false);
         return { result: data };
-    } catch (error: string | any) {
+    } catch (error: any) {
         setLoading(false);
         return { error: error.message || 'Something went wrong' };
     }

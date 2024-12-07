@@ -3,6 +3,7 @@
     align-items: flex-start;
     justify-content: flex-start;
     width: 90%;
+    height: 100vh;
 }
 
 .dash-main-cn {
@@ -98,6 +99,10 @@
     align-items: center;
     justify-content: flex-start;
     gap: .5rem;
+}
+
+.dash-user-info h1 {
+    font-size: 1.1rem;
 }
 
 .dash-info-user-account {
