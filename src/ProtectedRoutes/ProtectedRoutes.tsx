@@ -4,7 +4,6 @@ import { useEffect, useState } from "react";
 import { deleteCookie } from "../shared/Cookies/DeleteCookie";
 import { APP_URLS } from "../api/urls/url";
 import { getCookie } from "../shared/Cookies/GetCookie";
-import { createCookie } from "../shared/Cookies/setCookie";
 import LoadingSession from "./components/LoadingSession";
 import { useGlobalState } from "../store/useGlobalState";
 
