@@ -1,4 +1,4 @@
-export const API_URL = 'http://localhost:4200';
+export const API_URL = 'https://api-brd-invoices-production.up.railway.app';
 
 // Fecha para usar en la app
 export const brd_Date = new Date()
