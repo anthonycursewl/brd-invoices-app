@@ -89,6 +89,15 @@
     }
 }
 
+@media (max-width: 768px) {
+    .dash-main {
+        margin-top: 0;
+    }
+    .dash-utils {
+        margin-top: 0;
+    }
+}
+
 .dash-user-info img {
     width: 25px;
     height: auto;
